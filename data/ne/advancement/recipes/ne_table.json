@@ -1,0 +1,23 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+      "has_item": {
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:enchanted_book"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "ne:ne_table",
+        "ne:ne_gem_restore",
+        "ne:ne_gem_upg",
+        "ne:ne_cookie"
+      ]
+    }
+  }

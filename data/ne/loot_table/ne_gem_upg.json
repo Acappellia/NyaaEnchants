@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "nether_star",
+                    "name": "amethyst_shard",
                     "functions": [
                         {
                             "function": "set_components",
@@ -17,7 +17,8 @@
                                     "[{\"text\":\"可以为物品进行一次突破\",\"color\":\"#cdf77e\",\"italic\":false}]",
                                     "[{\"text\":\"— NyaaEnchants \",\"color\":\"gray\"}]"
                                 ],
-                                "max_stack_size": 64
+                                "max_stack_size": 64,
+                                "rarity": "epic"
                             }
                         }
                     ]

@@ -3,7 +3,7 @@ scoreboard players reset #book_penalty ne
 execute store result score #ne_ench_cost ne run data get entity @s item.components."minecraft:repair_cost"
 execute store result score #book_penalty ne run data get storage ne:tmp mainhand.components."minecraft:repair_cost"
 scoreboard players operation #ne_ench_cost ne += #book_penalty ne
-scoreboard players add #ne_ench_cost ne 10
+scoreboard players add #ne_ench_cost ne 8
 
 scoreboard players reset #ne_ench_itemcost ne
 scoreboard players reset #book_ench_times ne
