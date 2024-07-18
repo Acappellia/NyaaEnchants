@@ -1,0 +1,43 @@
+{
+    "type": "crafting_shaped",
+    "show_notification": true,
+    "category": "misc",
+    "key": {
+        "#": {
+            "item": "end_crystal"
+        },
+        "$": {
+            "item": "end_stone"
+        },
+        "*": {
+            "item": "end_rod"
+        },
+        "+": {
+            "item": "obsidian"
+        }
+    },
+    "pattern": [
+        "* *",
+        "+#+",
+        "$$$"
+    ],
+    "result": {
+        "id": "repeating_command_block",
+        "count": 1,
+        "components": {
+            "custom_data": "{ne_table:1b}",
+            "food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true,
+                "eat_seconds": 100000000
+            },
+            "item_name": "\"喵魔台\"",
+            "lore":[
+                "[{\"text\":\"更高级的附魔台喵\",\"color\":\"#7ef7c0\",\"italic\":false}]",
+                "[{\"text\":\"— NyaaEnchants \",\"color\":\"gray\"}]"
+            ],
+            "max_stack_size": 64
+        }
+    }
+}

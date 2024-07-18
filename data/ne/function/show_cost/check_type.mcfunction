@@ -1,0 +1,6 @@
+execute if data storage ne:tmp mainhand.components."minecraft:custom_data".ne_gem_restore run data merge entity @s {text:'[{"translate": "container.repair.cost","color": "white","with": [{"text": "5","color": "green"}]},{"text": " lvl","color": "green"}]',default_background:true}
+execute if data storage ne:tmp mainhand.components."minecraft:custom_data".ne_gem_upg run data merge entity @s {text:'[{"translate": "container.repair.cost","color": "white","with": [{"text": "10","color": "green"}]},{"text": " lvl","color": "green"}]',default_background:true}
+execute if data storage ne:tmp mainhand.components."minecraft:custom_data".ne_gem run return 1
+
+execute on vehicle run function ne:enchant/calc_cost
+data merge entity @s {text:'[{"translate": "container.repair.cost","color": "white","with": [{"score": {"name": "#ne_ench_cost","objective": "ne"},"color": "green"}]},{"text": " lvl ","color": "green"},{"score": {"name": "#ne_ench_itemcost","objective": "ne"},"color": "gold"},{"text": " 🍪","color": "gold"}]',default_background:true}

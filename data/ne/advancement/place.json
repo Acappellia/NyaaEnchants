@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "using_item": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "repeating_command_block"
+                    ],
+                    "predicates": {
+                        "custom_data": "{ne_table:1b}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ne:place/place"
+    }
+}

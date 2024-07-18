@@ -1,6 +1,19 @@
 {
     "pack": {
         "pack_format": 48,
-        "description": "NyaaEnchants v0.1 - 1.21"
+        "description": [
+            {
+                "text": "【 NyaaEnchants 】",
+                "color": "white"
+            },
+            {
+                "text": "\n自定义附魔数据包 ",
+                "color": "red"
+            },
+            {
+                "text": "v0.1 - MC 1.21",
+                "color": "gray"
+            }
+        ]
     }
 }

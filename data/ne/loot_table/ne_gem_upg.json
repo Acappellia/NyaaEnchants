@@ -1,0 +1,28 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "nether_star",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": "{ne_gem_upg:1b,ne_gem:1b}",
+                                "item_name": "\"突破石\"",
+                                "lore":[
+                                    "[{\"text\":\"可以为物品进行一次突破\",\"color\":\"#cdf77e\",\"italic\":false}]",
+                                    "[{\"text\":\"— NyaaEnchants \",\"color\":\"gray\"}]"
+                                ],
+                                "max_stack_size": 64
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

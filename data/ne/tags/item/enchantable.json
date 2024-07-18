@@ -1,0 +1,23 @@
+{
+    "replace": false,
+    "values": [
+        "#swords",
+        "bow",
+        "crossbow",
+        "trident",
+        "#head_armor",
+        "#chest_armor",
+        "#leg_armor",
+        "#foot_armor",
+        "mace",
+        "shield",
+        "#axes",
+        "#shovels",
+        "#pickaxes",
+        "#hoes",
+        "shears",
+        "elytra",
+        "book",
+        "enchanted_book"
+    ]
+}

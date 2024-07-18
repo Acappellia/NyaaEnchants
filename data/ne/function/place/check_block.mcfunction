@@ -1,0 +1,2 @@
+execute if entity @e[distance=..0.1,type=interaction,tag=ne_table] run scoreboard players set #ray_can_place ne 1
+execute unless block ~ ~ ~ #ne:replacable_blocks run scoreboard players set #ray_can_place ne 1
