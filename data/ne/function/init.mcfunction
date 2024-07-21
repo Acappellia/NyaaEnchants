@@ -1,5 +1,7 @@
 scoreboard objectives add ne dummy
 scoreboard players set #2 ne 2
+scoreboard players set #80 ne 80
+scoreboard players set #100 ne 100
 
 scoreboard objectives add ne_table_interact dummy
 

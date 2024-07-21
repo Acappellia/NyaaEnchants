@@ -1,0 +1,94 @@
+[
+    {
+        "function": "set_custom_data",
+        "tag": "{ne_void_curse:1b}"
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "tool": {
+                "rules": [
+                    {
+                        "correct_for_drops": false,
+                        "blocks": "#minecraft:mineable/pickaxe",
+                        "speed": 12
+                    }
+                ]
+            }
+        },
+        "conditions": [
+            {
+                "condition": "match_tool",
+                "predicate": {
+                    "items": "#pickaxes"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "tool": {
+                "rules": [
+                    {
+                        "correct_for_drops": false,
+                        "blocks": "#minecraft:mineable/axe",
+                        "speed": 12
+                    }
+                ]
+            }
+        },
+        "conditions": [
+            {
+                "condition": "match_tool",
+                "predicate": {
+                    "items": "#axes"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "tool": {
+                "rules": [
+                    {
+                        "correct_for_drops": false,
+                        "blocks": "#minecraft:mineable/shovel",
+                        "speed": 12
+                    }
+                ]
+            }
+        },
+        "conditions": [
+            {
+                "condition": "match_tool",
+                "predicate": {
+                    "items": "#shovels"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "tool": {
+                "rules": [
+                    {
+                        "correct_for_drops": false,
+                        "blocks": "#minecraft:mineable/hoe",
+                        "speed": 12
+                    }
+                ]
+            }
+        },
+        "conditions": [
+            {
+                "condition": "match_tool",
+                "predicate": {
+                    "items": "#hoes"
+                }
+            }
+        ]
+    }
+]
