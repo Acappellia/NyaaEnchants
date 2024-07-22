@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "durability_change": {
+            "trigger": "item_durability_changed",
+            "conditions": {
+                "item": {
+                    "items": "#minecraft:enchantable/mining",
+                    "predicates": {
+                        "enchantments": [
+                            {
+                                "enchantments": "ne:polishing"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ne:effects/polishing/schedule_effect"
+    }
+}

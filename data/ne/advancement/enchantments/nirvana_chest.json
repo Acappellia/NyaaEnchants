@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "durability_change": {
+            "trigger": "item_durability_changed",
+            "conditions": {
+                "durability":{
+                    "max": 0
+                },
+                "item": {
+                    "items": "#chest_armor",
+                    "predicates": {
+                        "enchantments": [
+                            {
+                                "enchantments": "ne:nirvana"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ne:effects/nirvana/chest"
+    }
+}

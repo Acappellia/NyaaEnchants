@@ -1,1 +1,0 @@
-$attribute @s player.mining_efficiency modifier add ne:ench_polishing $(amount) add_value

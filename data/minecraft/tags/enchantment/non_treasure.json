@@ -3,6 +3,7 @@
   "values": [
     "ne:polishing",
     "ne:reachability",
-    "ne:smelting"
+    "ne:smelting",
+    "ne:corruption_curse"
   ]
 }
