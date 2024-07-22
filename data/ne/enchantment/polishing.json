@@ -1,7 +1,7 @@
 {
     "anvil_cost": 1,
     "description": {
-      "text": "磨砾"
+      "text": "磨砺"
     },
     "exclusive_set": "minecraft:efficiency",
     "max_cost": {
