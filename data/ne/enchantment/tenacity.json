@@ -1,0 +1,254 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "text": "坚韧"
+  },
+  "exclusive_set": "unbreaking",
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 20.0,
+              "per_level_above_first": 5.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 2.0,
+              "per_level_above_first": 2.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "#minecraft:enchantable/armor",
+            "predicates": {
+              "damage": {
+                "durability": {
+                  "min": 201,
+                  "max": 500
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 4.0,
+              "per_level_above_first": 1.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 1.0,
+              "per_level_above_first": 1.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": "#minecraft:enchantable/armor"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "damage": {
+                    "durability": {
+                      "min": 201,
+                      "max": 500
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 10.0,
+              "per_level_above_first": 5.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 2.0,
+              "per_level_above_first": 2.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "#minecraft:enchantable/armor",
+            "predicates": {
+              "damage": {
+                "durability": {
+                  "min": 71,
+                  "max": 200
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 2.0,
+              "per_level_above_first": 1.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 1.0,
+              "per_level_above_first": 1.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": "#minecraft:enchantable/armor"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "damage": {
+                    "durability": {
+                      "min": 71,
+                      "max": 200
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 5.0,
+              "per_level_above_first": 2.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 2.0,
+              "per_level_above_first": 2.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "#minecraft:enchantable/armor",
+            "predicates": {
+              "damage": {
+                "durability": {
+                  "max": 70
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 3.0,
+              "per_level_above_first": 1.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 2.0,
+              "per_level_above_first": 1.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": "#minecraft:enchantable/armor"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "damage": {
+                    "durability": {
+                      "max": 70
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 55,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 5
+}
