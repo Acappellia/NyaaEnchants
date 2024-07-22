@@ -1,0 +1,49 @@
+{
+    "criteria": {
+        "durability_change": {
+            "trigger": "item_durability_changed",
+            "conditions": {
+                "item": {
+                    "items": "#minecraft:enchantable/mining",
+                    "predicates": {
+                        "attribute_modifiers": {
+                            "modifiers": {
+                                "contains": [
+                                    {
+                                        "id": "ne:enchantment.polishing",
+                                        "amount": {
+                                            "min": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "attribute_modifiers": {
+                                    "modifiers": {
+                                        "contains": [
+                                            {
+                                                "id": "ne:enchantment.polishing",
+                                                "amount": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ne:effects/polishing/remove_effect_mainhand"
+    }
+}
