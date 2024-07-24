@@ -3,7 +3,6 @@
   "description": {
     "text": "涅槃"
   },
-  "exclusive_set": "mending",
   "max_cost": {
     "base": 75,
     "per_level_above_first": 25

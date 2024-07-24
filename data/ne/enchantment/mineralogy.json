@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "text": "矿物学"
+  },
+  "effects": {
+    "location_changed": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "ne:effects/mineralogy/check_mined"
+        }
+      }
+    ]
+  },
+  "exclusive_set": "fortune",
+  "max_cost": {
+    "base": 55,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#pickaxes",
+  "weight": 5
+}

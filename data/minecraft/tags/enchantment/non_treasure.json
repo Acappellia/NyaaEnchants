@@ -4,6 +4,8 @@
     "ne:polishing",
     "ne:reachability",
     "ne:smelting",
-    "ne:corruption_curse"
+    "ne:corruption_curse",
+    "ne:siphon",
+    "ne:tenacity"
   ]
 }
