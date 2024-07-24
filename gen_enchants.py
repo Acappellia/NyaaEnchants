@@ -27,7 +27,7 @@ for name in ench_list_mc:
 
 for name in ench_list_ne:
     name = name.replace('.json','')
-    alllist.write('execute if data storage ne:tmp ench_component."minecraft:stored_enchantments".levels."ne:' + name + '" run function ne:enchant/enchants/' + name)
+    alllist.write('\nexecute if data storage ne:tmp ench_component."minecraft:stored_enchantments".levels."ne:' + name + '" run function ne:enchant/enchants/' + name)
     level_file = open(current_path + '/data/ne/enchantment/' + name + '.json','r',encoding="utf-8")
     level_data = json.load(level_file)
     max_level = level_data['max_level']
