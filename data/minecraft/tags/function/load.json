@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "ne:init"
+        "ne:init",
+        "minesense:load"
     ]
 }
