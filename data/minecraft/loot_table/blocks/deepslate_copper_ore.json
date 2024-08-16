@@ -97,6 +97,58 @@
                 }
             ],
             "rolls": 1.0
+        },
+        {
+            "rolls": 1.0,
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "predicate": {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "ne:mineralogy",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "loot_table",
+                            "value": "ne:loots/mineralogy_smelting",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "ne:smelting",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "ne:loots/mineralogy"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "random_sequence": "minecraft:blocks/deepslate_copper_ore"

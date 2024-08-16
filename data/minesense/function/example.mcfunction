@@ -1,1 +1,0 @@
-tellraw @a {"nbt":"data.block","storage":"minesense:data"}

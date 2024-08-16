@@ -1,17 +1,13 @@
 {
   "anvil_cost": 2,
   "description": {
-    "text": "矿物学"
+    "text": "考古学"
   },
-  "exclusive_set": [
-    "fortune",
-    "silk_touch"
-  ],
   "max_cost": {
     "base": 55,
     "per_level_above_first": 8
   },
-  "max_level": 3,
+  "max_level": 1,
   "min_cost": {
     "base": 5,
     "per_level_above_first": 8
@@ -19,6 +15,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#pickaxes",
+  "supported_items": "brush",
   "weight": 5
 }
