@@ -28,31 +28,38 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:burn_pottery_sherd"
+          "name": "minecraft:burn_pottery_sherd",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:danger_pottery_sherd"
+          "name": "minecraft:danger_pottery_sherd",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:friend_pottery_sherd"
+          "name": "minecraft:friend_pottery_sherd",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:heart_pottery_sherd"
+          "name": "minecraft:heart_pottery_sherd",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:heartbreak_pottery_sherd"
+          "name": "minecraft:heartbreak_pottery_sherd",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:howl_pottery_sherd"
+          "name": "minecraft:howl_pottery_sherd",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:sheaf_pottery_sherd"
+          "name": "minecraft:sheaf_pottery_sherd",
+          "weight": 2
         },
         {
           "type": "minecraft:item",

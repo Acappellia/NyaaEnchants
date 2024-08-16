@@ -6,137 +6,67 @@
                 {
                     "type": "item",
                     "name": "diamond",
-                    "functions": [
-                        {
-                            "function": "apply_bonus",
-                            "formula": "binomial_with_bonus_count",
-                            "parameters": {
-                                "extra": 0,
-                                "probability": 0.5
-                            },
-                            "enchantment": "ne:mineralogy"
-                        }
-                    ],
                     "weight": 2
                 },
                 {
                     "type": "item",
                     "name": "emerald",
-                    "functions": [
-                        {
-                            "function": "apply_bonus",
-                            "formula": "binomial_with_bonus_count",
-                            "parameters": {
-                                "extra": 0,
-                                "probability": 0.5
-                            },
-                            "enchantment": "ne:mineralogy"
-                        }
-                    ],
                     "weight": 2
                 },
                 {
                     "type": "item",
                     "name": "coal",
-                    "functions": [
-                        {
-                            "function": "apply_bonus",
-                            "formula": "binomial_with_bonus_count",
-                            "parameters": {
-                                "extra": 0,
-                                "probability": 0.5
-                            },
-                            "enchantment": "ne:mineralogy"
-                        }
-                    ],
                     "weight": 10
                 },
                 {
                     "type": "item",
                     "name": "iron_ingot",
-                    "functions": [
-                        {
-                            "function": "apply_bonus",
-                            "formula": "binomial_with_bonus_count",
-                            "parameters": {
-                                "extra": 0,
-                                "probability": 0.5
-                            },
-                            "enchantment": "ne:mineralogy"
-                        }
-                    ],
                     "weight": 10
                 },
                 {
                     "type": "item",
                     "name": "copper_ingot",
-                    "functions": [
-                        {
-                            "function": "apply_bonus",
-                            "formula": "binomial_with_bonus_count",
-                            "parameters": {
-                                "extra": 0,
-                                "probability": 0.5
-                            },
-                            "enchantment": "ne:mineralogy"
-                        }
-                    ],
                     "weight": 10
                 },
                 {
                     "type": "item",
                     "name": "redstone",
-                    "functions": [
-                        {
-                            "function": "apply_bonus",
-                            "formula": "binomial_with_bonus_count",
-                            "parameters": {
-                                "extra": 0,
-                                "probability": 0.5
-                            },
-                            "enchantment": "ne:mineralogy"
-                        }
-                    ],
                     "weight": 5
                 },
                 {
                     "type": "item",
                     "name": "gold_ingot",
-                    "functions": [
-                        {
-                            "function": "apply_bonus",
-                            "formula": "binomial_with_bonus_count",
-                            "parameters": {
-                                "extra": 0,
-                                "probability": 0.5
-                            },
-                            "enchantment": "ne:mineralogy"
-                        }
-                    ],
                     "weight": 5
                 },
                 {
                     "type": "item",
                     "name": "lapis_lazuli",
-                    "functions": [
-                        {
-                            "function": "apply_bonus",
-                            "formula": "binomial_with_bonus_count",
-                            "parameters": {
-                                "extra": 0,
-                                "probability": 0.5
-                            },
-                            "enchantment": "ne:mineralogy"
-                        }
-                    ],
                     "weight": 5
-                },
+                }
+            ],
+            "conditions": [
                 {
-                    "type": "empty",
-                    "weight": 200
+                    "condition": "random_chance",
+                    "chance": 0.4
                 }
             ]
         }
     ],
-    "type": "block"
+    "type": "block",
+    "functions": [
+        {
+            "function": "apply_bonus",
+            "formula": "binomial_with_bonus_count",
+            "parameters": {
+                "extra": 0,
+                "probability": 0.5
+            },
+            "enchantment": "ne:mineralogy"
+        },
+        {
+            "function": "set_count",
+            "add": true,
+            "count": -1
+        }
+    ]
 }

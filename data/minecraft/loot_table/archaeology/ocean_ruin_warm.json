@@ -29,17 +29,17 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:angler_pottery_sherd",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:shelter_pottery_sherd",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:snort_pottery_sherd",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",

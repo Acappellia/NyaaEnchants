@@ -29,22 +29,22 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:blade_pottery_sherd",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:explorer_pottery_sherd",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:mourner_pottery_sherd",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:plenty_pottery_sherd",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",

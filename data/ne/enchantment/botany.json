@@ -1,0 +1,60 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "text": "植物学"
+    },
+    "exclusive_set": [
+      "fortune",
+      "silk_touch"
+    ],
+    "effects": {
+        "hit_block": [
+            {
+                "effect": {
+                    "type": "all_of",
+                    "effects": [
+                        {
+                            "type": "damage_item",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "requirements": {
+                  "condition": "any_of",
+                  "terms": [
+                    {
+                        "condition": "block_state_property",
+                        "block": "short_grass"
+                    },
+                    {
+                        "condition": "block_state_property",
+                        "block": "tall_grass"
+                    },
+                    {
+                        "condition": "block_state_property",
+                        "block": "fern"
+                    },
+                    {
+                        "condition": "block_state_property",
+                        "block": "large_fern"
+                    }
+                  ]
+                }
+            }
+        ]
+    },
+    "max_cost": {
+      "base": 55,
+      "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 8
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#hoes",
+    "weight": 3
+  }
