@@ -4,7 +4,6 @@
     "translate": "ne.enchantments.corruption_curse",
     "fallback": "腐化诅咒"
   },
-  "exclusive_set": "mending",
   "effects": {
     "item_damage": [
       {
