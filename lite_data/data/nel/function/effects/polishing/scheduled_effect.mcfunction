@@ -1,1 +1,0 @@
-execute as @a if predicate nel:enchants/polishing run function nel:effects/polishing/get_effect

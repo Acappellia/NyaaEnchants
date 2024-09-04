@@ -63,7 +63,6 @@ for dirpath, dirnames, filenames in os.walk(startdir):
     for filename in filenames:
         arch_dir = dirpath.removeprefix(startdir).removeprefix('\\')
         litezip.write(os.path.join(arch_dir,filename))
-        print(arch_dir)
 litezip.close()
 
 shutil.rmtree(target)
