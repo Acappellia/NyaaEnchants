@@ -6,7 +6,8 @@ execute if score #ench_maxlvl ne matches 11.. run scoreboard players set #ench_m
 
 execute if score #ench_origin_level ne > #ench_added_level ne run return -1
 execute if score #ench_origin_level ne >= #ench_maxlvl ne run return -1
-execute if score #ench_origin_level ne = #ench_added_level ne run scoreboard players add #ench_origin_level ne 1
+
+execute if score #ench_origin_level ne = #ench_added_level ne run function ne:enchant/random_result
 execute if score #ench_origin_level ne < #ench_added_level ne run scoreboard players operation #ench_origin_level ne = #ench_added_level ne
 execute if score #ench_origin_level ne > #ench_maxlvl ne run scoreboard players operation #ench_origin_level ne = #ench_maxlvl ne
 
