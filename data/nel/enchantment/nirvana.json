@@ -16,6 +16,6 @@
   "slots": [
     "any"
   ],
-  "supported_items": "#ne:enchantable_nirvana",
+  "supported_items": "#nel:enchantable_nirvana",
   "weight": 1
 }

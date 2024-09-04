@@ -6,3 +6,5 @@ scoreboard players set #100 ne 100
 
 function nel:effects/chain_mining/init_scoreboards
 function nel:effects/timber/init_scoreboards
+
+function ne:init

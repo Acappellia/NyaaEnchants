@@ -51,6 +51,7 @@ if os.path.exists(target):
 
 shutil.copytree(source + '/data', target + '/data')
 shutil.copy(source + '/pack.mcmeta', target)
+shutil.copy(source + '/readme.md', target)
 
 shutil.rmtree(target + '/data/ne')
 
