@@ -1,0 +1,10 @@
+scoreboard players reset @s ne_mined.oak_log
+scoreboard players reset @s ne_mined.birch_log
+scoreboard players reset @s ne_mined.spruce_log
+scoreboard players reset @s ne_mined.jungle_log
+scoreboard players reset @s ne_mined.acacia_log
+scoreboard players reset @s ne_mined.dark_oak_log
+scoreboard players reset @s ne_mined.cherry_log
+scoreboard players reset @s ne_mined.mangrove_log
+scoreboard players reset @s ne_mined.crimson_stem
+scoreboard players reset @s ne_mined.warped_stem

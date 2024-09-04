@@ -1,0 +1,21 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": "#axes",
+                "predicates": {
+                    "enchantments": [
+                        {
+                            "enchantments": "nel:timber",
+                            "levels": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

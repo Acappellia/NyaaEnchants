@@ -1,0 +1,243 @@
+{
+    "type": "block",
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "poppy",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "dandelion",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "birch_sapling",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "oak_sapling",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "birch_sapling",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spruce_sapling",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "jungle_sapling",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "acacia_sapling",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "dark_oak_sapling",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "mangrove_propagule",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "cherry_sapling",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "blue_orchid",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "allium",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "azure_bluet",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "lily_of_the_valley",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "cornflower",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "oxeye_daisy",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "pink_tulip",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "red_tulip",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "orange_tulip",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "white_tulip",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "pink_petals",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "wither_rose",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "sunflower",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "lilac",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "rose_bush",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "peony",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "pitcher_plant",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "torchflower",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "sugar_cane",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "flowering_azalea",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "azalea",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "cocoa_beans",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "pumpkin_seeds",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "melon_seeds",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "beetroot_seeds",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "torchflower_seeds",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "pitcher_pod",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "glow_berries",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "sweet_berries",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "carrot",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "potato",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "red_mushroom",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "brown_mushroom",
+                    "weight": 10
+                }
+            ],
+            "rolls": 1.0,
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.1
+                }
+            ] 
+        }
+    ],
+    "functions": [
+        {
+            "function": "apply_bonus",
+            "enchantment": "minecraft:fortune",
+            "formula": "ore_drops"
+        }
+    ]
+}

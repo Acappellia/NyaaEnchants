@@ -1,0 +1,13 @@
+[
+    {
+        "function": "set_damage",
+        "damage": 1.0,
+        "add": false
+    },
+    {
+        "function": "set_enchantments",
+        "enchantments": {
+            "nel:nirvana": 0
+        }
+    }
+]

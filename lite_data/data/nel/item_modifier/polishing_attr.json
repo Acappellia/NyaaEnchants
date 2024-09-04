@@ -1,0 +1,22 @@
+[
+    {
+        "function": "set_attributes",
+        "replace": true,
+        "modifiers": [
+            {
+                "id": "nel:enchantment.polishing",
+                "amount": {
+                    "type": "score",
+                    "score": "ne",
+                    "target": {
+                        "type": "fixed",
+                        "name": "#polishing_lvl"
+                    }
+                },
+                "attribute": "minecraft:player.mining_efficiency",
+                "operation": "add_value",
+                "slot": "mainhand"
+            }
+        ]
+    }
+]

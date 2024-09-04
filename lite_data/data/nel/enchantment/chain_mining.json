@@ -1,0 +1,63 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "text": "矿脉挖掘"
+  },
+  "exclusive_set": [
+    "minecraft:efficiency",
+    "nel:polishing"
+  ],
+  "effects": {
+    "hit_block": [
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "summon_entity",
+              "entity": "area_effect_cloud"
+            },
+            {
+              "type": "run_function",
+              "function": "nel:effects/chain_mining/summon_indicator"
+            }
+          ]
+        },
+        "requirements": {
+          "condition": "location_check",
+          "predicate": {
+            "block": {
+              "blocks": "#nel:ore_blocks"
+            }
+          }
+        }
+      }
+    ],
+    "item_damage": [
+      {
+        "effect": {
+          "type": "set",
+          "value": {
+            "type": "linear",
+            "base": 3,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 51,
+    "per_level_above_first": 10
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:pickaxes",
+  "weight": 2
+}

@@ -1,0 +1,1 @@
+teleport @e[type=item,distance=..5] @s

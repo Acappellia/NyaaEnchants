@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.smelting",
+    "fallback": "熔炼"
+  },
+  "exclusive_set": "minecraft:silk_touch",
+  "effects": {
+    "minecraft:block_experience": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 3.0
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 83,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 33,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/mining",
+  "weight": 1
+}

@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "values": [
+        "air",
+        "cave_air",
+        "void_air",
+        "light",
+        "short_grass",
+        "tall_grass",
+        "fern",
+        "large_fern",
+        "snow",
+        "nether_sprouts",
+        "warped_roots",
+        "crimson_roots",
+        "vine",
+        "lava",
+        "water",
+        "bubble_column",
+        "seagrass",
+        "tall_seagrass",
+        "glow_lichen",
+        "sculk_vein",
+        "hanging_roots",
+        "light"
+    ]
+}

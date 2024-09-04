@@ -1,0 +1,25 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "ne.enchantments.mineralogy",
+    "fallback": "矿物学"
+  },
+  "exclusive_set": [
+    "fortune",
+    "silk_touch"
+  ],
+  "max_cost": {
+    "base": 63,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#pickaxes",
+  "weight": 1
+}

@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.corruption_curse",
+    "fallback": "腐化诅咒"
+  },
+  "exclusive_set": "mending",
+  "effects": {
+    "item_damage": [
+      {
+        "effect": {
+          "type": "multiply",
+          "factor": 5.0
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 100,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 1
+}

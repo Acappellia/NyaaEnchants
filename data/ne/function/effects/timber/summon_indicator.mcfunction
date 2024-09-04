@@ -1,1 +1,0 @@
-execute as @e[type=area_effect_cloud,distance=..10,nbt={Age:0}] at @s run function ne:effects/timber/summon_indicator_2

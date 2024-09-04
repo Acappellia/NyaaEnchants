@@ -1,0 +1,43 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "text": "植物学"
+    },
+    "effects": {
+        "hit_block": [
+            {
+                "effect": {
+                    "type": "all_of",
+                    "effects": [
+                        {
+                            "type": "damage_item",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "requirements": {
+                  "condition": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#nel:botany_blocks"
+                    }
+                  }
+                }
+            }
+        ]
+    },
+    "max_cost": {
+      "base": 55,
+      "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 8
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#hoes",
+    "weight": 3
+  }

@@ -1,0 +1,36 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.reachability",
+    "fallback": "钳爪"
+  },
+  "exclusive_set": "minecraft:efficiency",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "linear",
+          "base": 1.2,
+          "per_level_above_first": 0.6
+        },
+        "attribute": "minecraft:player.block_interaction_range",
+        "id": "ne:enchantment.reachability",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 61,
+    "per_level_above_first": 10
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 11,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/mining",
+  "weight": 2
+}

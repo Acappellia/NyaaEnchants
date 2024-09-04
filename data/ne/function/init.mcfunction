@@ -10,7 +10,4 @@ scoreboard objectives add ne_place_cd custom:time_since_death
 scoreboard objectives add ne_playerlevel level
 scoreboard objectives add ne_player_resetcost custom:time_since_death
 
-function ne:effects/chain_mining/init_scoreboards
-function ne:effects/timber/init_scoreboards
-
 schedule function ne:schedules/6s 6s append
