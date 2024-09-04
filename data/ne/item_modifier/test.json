@@ -1,0 +1,6 @@
+{
+    "function": "set_enchantments",
+    "enchantments": {
+        "ne:chain_mining": 5
+    }
+}

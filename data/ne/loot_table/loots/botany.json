@@ -232,5 +232,13 @@
                 }
             ] 
         }
+    ],
+    "functions": [
+        {
+            "function": "apply_bonus",
+            "enchantment": "minecraft:fortune",
+            "formula": "ore_drops",
+            "parameters": {}
+        }
     ]
 }

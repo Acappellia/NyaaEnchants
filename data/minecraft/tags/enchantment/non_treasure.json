@@ -7,6 +7,8 @@
     "ne:corruption_curse",
     "ne:siphon",
     "ne:tenacity",
-    "ne:mineralogy"
+    "ne:mineralogy",
+    "ne:chain_mining",
+    "ne:timber"
   ]
 }

@@ -3,10 +3,6 @@
     "description": {
       "text": "植物学"
     },
-    "exclusive_set": [
-      "fortune",
-      "silk_touch"
-    ],
     "effects": {
         "hit_block": [
             {
@@ -20,25 +16,12 @@
                     ]
                 },
                 "requirements": {
-                  "condition": "any_of",
-                  "terms": [
-                    {
-                        "condition": "block_state_property",
-                        "block": "short_grass"
-                    },
-                    {
-                        "condition": "block_state_property",
-                        "block": "tall_grass"
-                    },
-                    {
-                        "condition": "block_state_property",
-                        "block": "fern"
-                    },
-                    {
-                        "condition": "block_state_property",
-                        "block": "large_fern"
+                  "condition": "location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "#ne:botany_blocks"
                     }
-                  ]
+                  }
                 }
             }
         ]
