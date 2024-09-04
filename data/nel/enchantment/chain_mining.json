@@ -37,10 +37,10 @@
     "item_damage": [
       {
         "effect": {
-          "type": "set",
+          "type": "add",
           "value": {
             "type": "linear",
-            "base": 3,
+            "base": 2,
             "per_level_above_first": 1
           }
         }

@@ -7,7 +7,7 @@
                     "max": 0
                 },
                 "item": {
-                    "items": "#ne:mainhand_nirvana",
+                    "items": "#nel:mainhand_nirvana",
                     "predicates": {
                         "enchantments": [
                             {
