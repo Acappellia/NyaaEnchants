@@ -1,3 +1,7 @@
+scoreboard players set #214748 ne 214748
+scoreboard players set #-3648 ne -3648
+scoreboard players set #10000 ne 10000
+
 scoreboard objectives add ne_table_interact dummy
 
 scoreboard objectives add ne_place_cd custom:time_since_death

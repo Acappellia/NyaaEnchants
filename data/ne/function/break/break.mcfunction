@@ -8,7 +8,7 @@ scoreboard players set @s ne_place_cd -5
 ##identifying the ne_table point
 #define score_holder #current_time
 execute store result score #current_time ne run time query gametime
-execute as @e[distance=..5,type=interaction,tag=ne_table] store result score @s ne_table_interact run data get entity @s attack.timestamp
+execute as @e[distance=..5,type=interaction,tag=ne_table] run function ne:calc/get_atk_time
 execute as @e[distance=..5,type=interaction,tag=ne_table] if score @s ne_table_interact = #current_time ne run tag @s add interact_target
 
 
