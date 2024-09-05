@@ -17,3 +17,4 @@ scoreboard players operation #calc_low ne -= #calc_high ne
 
 execute if score #calc_low ne matches ..-1 run function ne:calc/add_int32
 scoreboard players operation @s ne_table_interact = #calc_low ne
+scoreboard players operation @s ne_table_interact += #server_time_offset ne
