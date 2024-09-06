@@ -1,3 +1,5 @@
+execute unless block ~ ~ ~ #ne:replacable_blocks run return -1
+
 item modify entity @s weapon.mainhand ne:remove_1
 
 #setblock ~ ~ ~ barrier
