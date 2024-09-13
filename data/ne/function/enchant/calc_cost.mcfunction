@@ -13,4 +13,4 @@ execute if score #book_ench_times ne > #ne_ench_itemcost ne run scoreboard playe
 scoreboard players add #ne_ench_itemcost ne 3
 execute if score #ne_ench_itemcost ne matches 10.. run scoreboard players set #ne_ench_itemcost ne 9\
 
-execute store result score #item_break_count ne run data get entity @s item.components."minecraft:custom_data".ne_break
+execute store result score #item_break_count_hint ne run data get entity @s item.components."minecraft:custom_data".ne_break
