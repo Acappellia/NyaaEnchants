@@ -34,7 +34,9 @@
             },
             "item_name": "\"喵魔台\"",
             "lore":[
-                "[{\"text\":\"更高级的附魔台喵\",\"color\":\"#7ef7c0\",\"italic\":false}]",
+                "[{\"text\":\"由喵的魔法提供的进阶附魔台\",\"color\":\"#7ef7c0\",\"italic\":false}]",
+                "[{\"text\":\"除了可以当铁砧用，结合突破石还可以进一步解除附魔的等级限制\",\"color\":\"#7ef7c0\",\"italic\":false}]",
+                "[{\"text\":\"不过只能用来升级已有附魔的等级，不能添加新的附魔\",\"color\":\"#7ef7c0\",\"italic\":false}]",
                 "[{\"text\":\"— NyaaEnchants \",\"color\":\"gray\"}]"
             ],
             "max_stack_size": 64

@@ -10,6 +10,6 @@ execute if score #ench_origin_level ne >= #ench_maxlvl ne run return -1
 execute if score #ench_origin_level ne = #ench_added_level ne run function ne:enchant/random_result
 execute if score #ench_origin_level ne < #ench_added_level ne run scoreboard players operation #ench_origin_level ne = #ench_added_level ne
 #execute if score #ench_origin_level ne > #ench_maxlvl ne run scoreboard players operation #ench_origin_level ne = #ench_maxlvl ne
-execute if score #ench_origin_level ne matches 11.. run scoreboard players set #ench_origin_level ne 10
+#execute if score #ench_origin_level ne matches 11.. run scoreboard players set #ench_origin_level ne 10
 
 execute store result entity @s item.components."minecraft:stored_enchantments".levels."minecraft:channeling" int 1 run scoreboard players get #ench_origin_level ne

@@ -22,7 +22,7 @@
             "custom_data": "{ne_cookie:1b}",
             "item_name": "\"魔法曲奇\"",
             "lore":[
-                "[{\"text\":\"在进行高级附魔时必须要吃的一个东西\",\"color\":\"#f7cb7e\",\"italic\":false}]",
+                "[{\"text\":\"在进行进阶附魔时必须要吃的一个东西\",\"color\":\"#f7cb7e\",\"italic\":false}]",
                 "[{\"text\":\"— NyaaEnchants \",\"color\":\"gray\"}]"
             ],
             "max_stack_size": 64,

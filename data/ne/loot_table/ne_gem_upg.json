@@ -14,7 +14,8 @@
                                 "custom_data": "{ne_gem_upg:1b,ne_gem:1b}",
                                 "item_name": "\"突破石\"",
                                 "lore":[
-                                    "[{\"text\":\"可以为物品进行一次突破\",\"color\":\"#cdf77e\",\"italic\":false}]",
+                                    "[{\"text\":\"在喵魔台可以为物品进行一次突破，提升所有附魔的最高等级\",\"color\":\"#cdf77e\",\"italic\":false}]",
+                                    "[{\"text\":\"突破后需要在喵魔台进一步提高附魔等级\",\"color\":\"#cdf77e\",\"italic\":false}]",
                                     "[{\"text\":\"— NyaaEnchants \",\"color\":\"gray\"}]"
                                 ],
                                 "max_stack_size": 64,
