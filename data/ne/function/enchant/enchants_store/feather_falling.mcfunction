@@ -5,7 +5,7 @@ execute store result score #ench_added_level ne run data get storage ne:tmp ench
 #execute if score #ench_maxlvl ne matches 11.. run scoreboard players set #ench_maxlvl ne 10
 
 execute if score #ench_origin_level ne > #ench_added_level ne run return -1
-execute if score #ench_origin_level ne >= #ench_maxlvl ne run return -1
+#execute if score #ench_origin_level ne >= #ench_maxlvl ne run return -1
 
 execute if score #ench_origin_level ne = #ench_added_level ne run function ne:enchant/random_result
 execute if score #ench_origin_level ne < #ench_added_level ne run scoreboard players operation #ench_origin_level ne = #ench_added_level ne
