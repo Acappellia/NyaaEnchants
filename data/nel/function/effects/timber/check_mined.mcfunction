@@ -8,7 +8,7 @@ execute as @e[type=area_effect_cloud,distance=..20,tag=ne_timber_indicator] at @
 
 execute as @e[type=area_effect_cloud,distance=..40,tag=ne_timber_indicator_current] at @s run function nel:effects/timber/find_leaves/1
 execute store result score #timber_leave_count ne if entity @e[type=area_effect_cloud,distance=..40,tag=ne_leave_indicator]
-execute unless score #timber_leave_count ne matches 4.. run return run kill @e[type=area_effect_cloud,distance=..40,tag=ne_timber_indicator_current]
+execute unless score #timber_leave_count ne matches 10.. run return run kill @e[type=area_effect_cloud,distance=..40,tag=ne_timber_indicator_current]
 
 tag @s add timber_miner
 execute as @e[type=area_effect_cloud,distance=..40,tag=ne_timber_indicator_current] at @s run function nel:effects/timber/mine_block
