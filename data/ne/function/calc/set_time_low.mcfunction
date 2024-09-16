@@ -1,1 +1,0 @@
-$scoreboard players set #calc_low ne $(low)

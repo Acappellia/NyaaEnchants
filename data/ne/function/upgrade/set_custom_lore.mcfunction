@@ -1,1 +1,0 @@
-$execute if data storage ne:tmp mainhand.components."minecraft:custom_name" run data modify entity @s item.components."minecraft:lore"[$(index)] set from storage ne:tmp mainhand.components."minecraft:custom_name"

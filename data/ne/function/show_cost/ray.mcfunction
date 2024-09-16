@@ -1,2 +1,0 @@
-execute as @n[type=text_display,tag=ne_cost,distance=..1] at @s run function ne:show_cost/check_type
-execute unless entity @e[type=item_display,tag=ne_have_item,distance=..1] if entity @s[distance=..4] positioned ^ ^ ^0.5 run function ne:show_cost/ray
