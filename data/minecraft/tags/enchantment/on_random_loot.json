@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:in_enchanting_table"
+    "#minecraft:in_enchanting_table",
+    "nel:archaeology",
+    "nel:botany",
+    "nel:nirvana"
   ]
 }
