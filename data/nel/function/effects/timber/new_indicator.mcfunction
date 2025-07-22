@@ -1,4 +1,4 @@
-data merge entity @s {Tags:["ne_timber_indicator","ne_timber_indicator_current"],Duration:1,WaitTime:0,Radius:0,Particle:{type:"wax_on"}}
+data merge entity @s {Tags:["ne_timber_indicator","ne_timber_indicator_current"],Duration:1,WaitTime:0,Radius:0,custom_particle:{type:"wax_on"}}
 
 scoreboard players remove #timber_max_iteration ne 1
 

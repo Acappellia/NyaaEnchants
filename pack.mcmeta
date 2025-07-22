@@ -1,6 +1,6 @@
 {
     "pack": {
-        "pack_format": 48,
+        "pack_format": 81,
         "description": [
             {
                 "text": "【 NyaaEnchants 】",
@@ -11,7 +11,7 @@
                 "color": "red"
             },
             {
-                "text": "v0.1 - MC 1.21",
+                "text": "v0.1.1 - MC 1.21.8",
                 "color": "gray"
             }
         ]

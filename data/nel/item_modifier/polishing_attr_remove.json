@@ -6,7 +6,7 @@
             {
                 "id": "nel:enchantment.polishing",
                 "amount": 0,
-                "attribute": "minecraft:player.mining_efficiency",
+                "attribute": "minecraft:mining_efficiency",
                 "operation": "add_value",
                 "slot": "mainhand"
             }
