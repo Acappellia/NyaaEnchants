@@ -14,9 +14,11 @@
                                 "max": 3
                             }
                         },
-                        "passenger": {
+                        "vehicle": {
                             "passenger": {
-                                "nbt": "{Tags:[\"ne_have_item\"]}"
+                                "passenger": {
+                                    "nbt": "{Tags:[\"ne_have_item\"]}"
+                                }
                             }
                         }
                     }
@@ -41,9 +43,11 @@
                                 "max": 3
                             }
                         },
-                        "passenger": {
+                        "vehicle": {
                             "passenger": {
-                                "nbt": "{Tags:[\"ne_have_item\"]}"
+                                "passenger": {
+                                    "nbt": "{Tags:[\"ne_have_item\"]}"
+                                }
                             }
                         }
                     }
