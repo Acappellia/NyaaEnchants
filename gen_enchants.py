@@ -14,7 +14,7 @@ template_store = open(current_path + '/ench_gen/template_store.mcfunction','r',e
 
 for name in ench_list_mc:
     name = name.replace('.json','')
-    alllist.write('\nexecute if data storage ne:tmp ench_component."minecraft:stored_enchantments".levels."minecraft:' + name + '" run function ne:enchant/enchants/' + name)
+    alllist.write('\nexecute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."minecraft:' + name + '" run function ne:enchant/enchants/' + name)
     level_file = open(current_path + '/ench_gen/enchantment_ref/' + name + '.json','r',encoding="utf-8")
     level_data = json.load(level_file)
     max_level = level_data['max_level']
@@ -27,7 +27,7 @@ for name in ench_list_mc:
 
 for name in ench_list_ne:
     name = name.replace('.json','')
-    alllist.write('\nexecute if data storage ne:tmp ench_component."minecraft:stored_enchantments".levels."nel:' + name + '" run function ne:enchant/enchants/' + name)
+    alllist.write('\nexecute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:' + name + '" run function ne:enchant/enchants/' + name)
     level_file = open(current_path + '/data/nel/enchantment/' + name + '.json','r',encoding="utf-8")
     level_data = json.load(level_file)
     max_level = level_data['max_level']
