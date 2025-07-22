@@ -20,7 +20,7 @@ playsound block.vault.ambient block @a ~ ~ ~ 1 1.2
 particle enchant ~ ~0.8 ~ 0.15 0 0.15 0 20
 tag @s remove ne_have_item
 tag @s add working
-summon area_effect_cloud ~ ~ ~ {Duration:40,Tags:["ne_ench_timer"]}
+summon area_effect_cloud ~ ~ ~ {Radius:0,Duration:40,Tags:["ne_ench_timer"]}
 ride @n[type=area_effect_cloud,tag=ne_ench_timer,distance=..0.1] mount @s
 
 schedule function ne:enchant/schedule 40t append
