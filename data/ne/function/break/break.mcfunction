@@ -12,4 +12,4 @@ scoreboard players set @s ne_place_cd -5
 #execute as @e[distance=..5,type=interaction,tag=ne_table] if data entity @s attack run tag @s add interact_target
 
 
-execute as @e[distance=..5,type=interaction,tag=ne_table] if data entity @s attack at @s run function ne:break/remove_block
+execute as @e[distance=..5,type=interaction,tag=ne_table] if data entity @s attack at @s on vehicle run function ne:break/remove_block

@@ -11,7 +11,7 @@ execute as @e[distance=..5,type=interaction,tag=ne_table] if data entity @s inte
 
 ##determine if the point exists
 tag @s add ne_user
-execute as @n[distance=..5,type=interaction,tag=interact_target,tag=ne_table] on passengers on passengers as @s[tag=ne_table_item] unless entity @s[tag=working] at @s run function ne:interact/check_status
+execute as @n[distance=..5,type=interaction,tag=interact_target,tag=ne_table] on vehicle on passengers on passengers as @s[tag=ne_table_item] unless entity @s[tag=working] at @s run function ne:interact/check_status
 tag @s remove ne_user
 
 execute as @e[distance=..5,type=interaction,tag=ne_table] run function ne:interact/interact_removetag
