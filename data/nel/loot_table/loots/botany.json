@@ -222,6 +222,101 @@
                     "type": "item",
                     "name": "brown_mushroom",
                     "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "pale_oak_sapling",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "wildflowers",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "leaf_litter",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "short_grass",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "fern",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "short_dry_grass",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "bush",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "dead_bush",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "firefly_bush",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "cactus_flower",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "closed_eyeblossom",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "open_eyeblossom",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "bamboo",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "cactus",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "big_dripleaf",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "small_dripleaf",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "crimson_roots",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "glow_lichen",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "hanging_roots",
+                    "weight": 1
                 }
             ],
             "rolls": 1.0,
