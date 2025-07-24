@@ -5,24 +5,33 @@
     "fallback": "空洞诅咒"
   },
   "effects": {
-    "attributes": [
+    "location_changed": [
       {
-        "amount": -1,
-        "attribute": "armor",
-        "id": "ne:enchantments.hollow_curse",
-        "operation": "add_multiplied_total"
+        "effect": {
+          "type": "attribute",
+          "amount": -1,
+          "attribute": "armor",
+          "id": "ne:enchantments.hollow_curse",
+          "operation": "add_multiplied_total"
+        }
       },
       {
-        "amount": -1,
-        "attribute": "armor_toughness",
-        "id": "ne:enchantments.hollow_curse",
-        "operation": "add_multiplied_total"
+        "effect": {
+          "type": "attribute",
+          "amount": -1,
+          "attribute": "armor_toughness",
+          "id": "ne:enchantments.hollow_curse",
+          "operation": "add_multiplied_total"
+        }
       },
       {
-        "amount": -1,
-        "attribute": "knockback_resistance",
-        "id": "ne:enchantments.hollow_curse",
-        "operation": "add_multiplied_total"
+        "effect":{
+          "type": "attribute",
+          "amount": -1,
+          "attribute": "knockback_resistance",
+          "id": "ne:enchantments.hollow_curse",
+          "operation": "add_multiplied_total"
+        }
       }
     ]
   },
