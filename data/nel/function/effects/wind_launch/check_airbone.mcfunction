@@ -1,0 +1,1 @@
+execute if predicate nel:enchants/airbone run scoreboard players add @s ne_cooldown.wind_launch 1

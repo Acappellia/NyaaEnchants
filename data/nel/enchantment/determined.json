@@ -1,0 +1,79 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.determined",
+    "fallback": "不屈"
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "apply_mob_effect",
+              "to_apply": "resistance",
+              "max_amplifier": {
+                "type": "lookup",
+                "values": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "fallback": 3
+              },
+              "min_amplifier": {
+                "type": "lookup",
+                "values": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "fallback": 3
+              },
+              "min_duration": 5,
+              "max_duration": 5
+            },
+            {
+              "type": "run_function",
+              "function": "nel:effects/determined/reset_scoreboards"
+            }
+          ]
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_cooldown.determined": {
+                  "min": 0
+                },
+                "ne_health": {
+                  "max": 6
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 63,
+    "per_level_above_first": 20
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 23,
+    "per_level_above_first": 20
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 1
+}

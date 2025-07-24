@@ -1,0 +1,43 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.hollow_curse",
+    "fallback": "空洞诅咒"
+  },
+  "effects": {
+    "attributes": [
+      {
+        "amount": -1,
+        "attribute": "armor",
+        "id": "ne:enchantments.hollow_curse",
+        "operation": "add_multiplied_total"
+      },
+      {
+        "amount": -1,
+        "attribute": "armor_toughness",
+        "id": "ne:enchantments.hollow_curse",
+        "operation": "add_multiplied_total"
+      },
+      {
+        "amount": -1,
+        "attribute": "knockback_resistance",
+        "id": "ne:enchantments.hollow_curse",
+        "operation": "add_multiplied_total"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 100,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/equippable",
+  "weight": 1
+}

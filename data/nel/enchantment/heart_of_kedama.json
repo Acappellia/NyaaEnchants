@@ -1,0 +1,207 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.heart_of_kedama",
+    "fallback": "毛玉之心"
+  },
+  "effects": {
+    "tick": [
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "cherry_leaves"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_cherry"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.4
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -5767320
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_light_green"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.3
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -3211290
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_white"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.3
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -30968
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_orange"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.3
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -16731121
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "location_check",
+                "predicate": {
+                  "biomes": "#nel:hot_all_special"
+                }
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.3
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 100,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/equippable",
+  "weight": 1
+}

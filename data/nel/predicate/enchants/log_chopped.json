@@ -90,6 +90,15 @@
                     "min": 1
                 }
             }
+        },
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "ne_mined.pale_oak_log": {
+                    "min": 1
+                }
+            }
         }
     ]
 }

@@ -1,0 +1,119 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.wind_launch",
+    "fallback": "凌风跃"
+  },
+  "effects": {
+    "minecraft:attributes":[
+      {
+        "amount": 1,
+        "attribute": "safe_fall_distance",
+        "id": "ne:enchantment.wind_launch",
+        "operation": "add_multiplied_base"
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/check_airbone"
+        },
+        "requirements": {
+          "condition": "inverted",
+          "term": {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "ne_cooldown.wind_launch": {
+                "max": -1
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "explode",
+              "attribute_to_user": false,
+              "block_interaction": "none",
+              "large_particle": {
+                "type": "minecraft:gust_emitter_small"
+              },
+              "radius": 0.1,
+              "small_particle": {
+                "type": "minecraft:gust"
+              },
+              "sound": "minecraft:entity.breeze.jump",
+              "knockback_multiplier": 1
+            },
+            {
+              "type": "run_function",
+              "function": "nel:effects/wind_launch/post_jump"
+            }
+          ]
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_cooldown.wind_launch": {
+                  "min": 1
+                }
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "input": {
+                    "jump": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 83,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 33,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 1
+}

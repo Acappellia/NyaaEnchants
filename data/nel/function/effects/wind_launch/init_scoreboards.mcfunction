@@ -1,0 +1,1 @@
+scoreboard objectives add ne_cooldown.wind_launch dummy

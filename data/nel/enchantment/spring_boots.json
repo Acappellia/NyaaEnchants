@@ -1,0 +1,46 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.spring_boots",
+    "fallback": "弹力靴"
+  },
+  "exclusive_set": "feather_falling",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "linear",
+          "base": 0.35,
+          "per_level_above_first": 0.35
+        },
+        "attribute": "minecraft:jump_strength",
+        "id": "ne:enchantment.spring_boots",
+        "operation": "add_multiplied_base"
+      },
+      {
+        "amount": {
+          "type": "linear",
+          "base": 0.35,
+          "per_level_above_first": 0.35
+        },
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "ne:enchantment.spring_boots",
+        "operation": "add_multiplied_base"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 63,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 23,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 1
+}

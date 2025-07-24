@@ -1,0 +1,48 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.sprint",
+    "fallback": "疾走"
+  },
+  "exclusive_set": "swift_sneak",
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "attribute",  
+          "amount": {
+            "type": "linear",
+            "base": 0.1,
+            "per_level_above_first": 0.1
+          },
+          "attribute": "minecraft:movement_speed",
+          "id": "ne:enchantment.sprint",
+          "operation": "add_multiplied_base"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_sprinting": true
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 61,
+    "per_level_above_first": 10
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 11,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 1
+}

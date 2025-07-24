@@ -1,0 +1,151 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.sakura_kinetics",
+    "fallback": "樱花动力"
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/sakura_kinetics/check_flying"
+        }
+      },
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "explode",
+              "attribute_to_user": false,
+              "block_interaction": "none",
+              "large_particle": {
+                "type": "minecraft:gust_emitter_small"
+              },
+              "radius": 0.1,
+              "small_particle": {
+                "type": "minecraft:gust"
+              },
+              "sound": "minecraft:entity.firework_rocket.launch",
+              "knockback_multiplier": 2.5
+            },
+            {
+              "type": "run_function",
+              "function": "nel:effects/sakura_kinetics/post_boost"
+            }
+          ]
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_cooldown.sakura_kinetics": {
+                  "min": 1
+                },
+                "ne_cooldown.sakura_kinetics_launch": {
+                  "min": 0
+                }
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "input": {
+                    "jump": true
+                  }
+                }
+              }
+            },
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "inventory.*": {
+                        "items": "firework_rocket"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "hotbar.*": {
+                        "items": "firework_rocket"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "weapon.*": {
+                        "items": "firework_rocket"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "armor.*": {
+                        "items": "firework_rocket"
+                      }
+                    }
+                  }
+                }
+              ] 
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/sakura_kinetics/land"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_flying": false
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 83,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 33,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "chest"
+  ],
+  "supported_items": "minecraft:elytra",
+  "weight": 1
+}

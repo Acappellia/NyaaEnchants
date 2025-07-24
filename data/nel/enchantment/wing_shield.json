@@ -1,0 +1,92 @@
+{
+  "anvil_cost": 3,
+  "description": {
+    "translate": "ne.enchantments.wing_shield",
+    "fallback": "守护之翼"
+  },
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1.0,
+            "per_level_above_first": 1.0
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": false,
+                "id": "minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wing_shield/launch"
+        },
+        "requirements": {
+          "condition": "any_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "dimension": "overworld",
+                "position": {
+                  "y": {
+                    "max": -120
+                  }
+                }
+              }
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "dimension": "the_nether",
+                "position": {
+                  "y": {
+                    "max": -56
+                  }
+                }
+              }
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "dimension": "the_end",
+                "position": {
+                  "y": {
+                    "max": -56
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 63,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 23,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "chest"
+  ],
+  "supported_items": "minecraft:elytra",
+  "weight": 1
+}

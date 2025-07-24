@@ -1,0 +1,2 @@
+scoreboard objectives add ne_cooldown.determined custom:time_since_death
+scoreboard objectives add ne_health health

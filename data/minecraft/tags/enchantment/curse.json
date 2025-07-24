@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "nel:corruption_curse"
+    "nel:corruption_curse",
+    "nel:hollow_curse"
   ]
 }

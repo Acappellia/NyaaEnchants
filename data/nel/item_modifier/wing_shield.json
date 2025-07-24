@@ -1,0 +1,8 @@
+[
+    {
+        "function": "set_enchantments",
+        "enchantments": {
+            "nel:wing_shield": 0
+        }
+    }
+]

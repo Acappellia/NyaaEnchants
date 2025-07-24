@@ -1,0 +1,2 @@
+scoreboard objectives add ne_cooldown.sakura_kinetics dummy
+scoreboard objectives add ne_cooldown.sakura_kinetics_launch custom:time_since_death

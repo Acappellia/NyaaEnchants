@@ -9,6 +9,15 @@
     "nel:tenacity",
     "nel:mineralogy",
     "nel:chain_mining",
-    "nel:timber"
+    "nel:timber",
+    "nel:armored",
+    "nel:vitality",
+    "nel:intellect",
+    "nel:steady",
+    "nel:determined",
+    "nel:sprint",
+    "nel:spring_boots",
+    "nel:brisk_walking",
+    "nel:hollow_curse"
   ]
 }

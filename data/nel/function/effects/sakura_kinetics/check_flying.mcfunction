@@ -1,0 +1,1 @@
+execute if predicate nel:enchants/is_flying run scoreboard players add @s ne_cooldown.sakura_kinetics 1

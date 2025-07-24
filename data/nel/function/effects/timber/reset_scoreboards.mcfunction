@@ -8,3 +8,4 @@ scoreboard players reset @s ne_mined.cherry_log
 scoreboard players reset @s ne_mined.mangrove_log
 scoreboard players reset @s ne_mined.crimson_stem
 scoreboard players reset @s ne_mined.warped_stem
+scoreboard players reset @s ne_mined.pale_oak_log

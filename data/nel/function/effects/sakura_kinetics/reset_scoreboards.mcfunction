@@ -1,0 +1,2 @@
+scoreboard players reset @s ne_cooldown.sakura_kinetics
+scoreboard objectives add ne_cooldown.sakura_kinetics_launch custom:time_since_death

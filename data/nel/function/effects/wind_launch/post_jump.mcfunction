@@ -1,0 +1,1 @@
+scoreboard players set @s ne_cooldown.wind_launch -1

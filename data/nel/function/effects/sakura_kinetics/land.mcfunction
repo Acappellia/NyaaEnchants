@@ -1,0 +1,1 @@
+scoreboard players reset @s ne_cooldown.sakura_kinetics
