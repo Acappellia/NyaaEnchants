@@ -1,0 +1,1 @@
+summon donkey ~ ~ ~ {Tame:true,Health:1,Passengers:[{id:"tnt_minecart",Passengers:[{id:"happy_ghast",Passengers:[{id:"tnt_minecart"},{id:"tnt_minecart"},{id:"tnt_minecart"},{id:"tnt_minecart"}],attributes:[{id:scale,base:0.3}]}]}]}

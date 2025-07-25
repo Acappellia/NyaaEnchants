@@ -20,6 +20,82 @@
             "scale": 2
           },
           "particle": {
+            "type": "bubble"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "#water"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.12
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "lava"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "#lava"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.12
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
             "type": "cherry_leaves"
           },
           "horizontal_velocity": {},
@@ -31,12 +107,21 @@
             {
               "condition": "location_check",
               "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
                 "biomes": "#nel:hot_cherry"
               }
             },
             {
               "condition": "random_chance",
-              "chance": 0.4
+              "chance": 0.12
             }
           ]
         }
@@ -67,12 +152,21 @@
             {
               "condition": "location_check",
               "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
                 "biomes": "#nel:hot_light_green"
               }
             },
             {
               "condition": "random_chance",
-              "chance": 0.3
+              "chance": 0.1
             }
           ]
         }
@@ -103,12 +197,21 @@
             {
               "condition": "location_check",
               "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
                 "biomes": "#nel:hot_white"
               }
             },
             {
               "condition": "random_chance",
-              "chance": 0.3
+              "chance": 0.1
             }
           ]
         }
@@ -139,12 +242,154 @@
             {
               "condition": "location_check",
               "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
                 "biomes": "#nel:hot_orange"
               }
             },
             {
               "condition": "random_chance",
-              "chance": 0.3
+              "chance": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -30968
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_orange"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "firefly"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_firefly"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 8
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 2,
+            "scale": 2
+          },
+          "particle": {
+            "type": "ash"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_ash"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.2
             }
           ]
         }
@@ -173,6 +418,15 @@
           "condition": "all_of",
           "terms": [
             {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
               "condition": "inverted",
               "term": {
                 "condition": "location_check",
@@ -183,7 +437,445 @@
             },
             {
               "condition": "random_chance",
-              "chance": 0.3
+              "chance": 0.1
+            }
+          ]
+        }
+      }
+    ],
+    "location_changed": [
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "bubble"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "#water"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "random_chance",
+              "chance": 1
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "lava"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "#lava"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "random_chance",
+              "chance": 1
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "cherry_leaves"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_cherry"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -5767320
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_light_green"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -3211290
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_white"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -30968
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_orange"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -30968
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_orange"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "firefly"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_firefly"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 1
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "ash"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "location_check",
+              "predicate": {
+                "biomes": "#nel:hot_ash"
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 1
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 3
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 0.5,
+            "scale": 1
+          },
+          "particle": {
+            "type": "tinted_leaves",
+            "color": -16731121
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {}
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "fluid": {
+                  "fluids": "empty"
+                }
+              },
+              "offsetY": 1
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "location_check",
+                "predicate": {
+                  "biomes": "#nel:hot_all_special"
+                }
+              }
+            },
+            {
+              "condition": "random_chance",
+              "chance": 0.5
             }
           ]
         }
@@ -202,6 +894,6 @@
   "slots": [
     "armor"
   ],
-  "supported_items": "#minecraft:enchantable/equippable",
+  "supported_items": "minecraft:elytra",
   "weight": 1
 }

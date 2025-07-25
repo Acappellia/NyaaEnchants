@@ -10,8 +10,6 @@
         "frozen_peaks",
         "frozen_river",
         "deep_frozen_ocean",
-        "pale_garden",
-        "#is_end",
-        "the_void"
+        "pale_garden"
     ]
 }
