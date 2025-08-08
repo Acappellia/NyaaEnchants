@@ -1,7 +1,7 @@
 advancement revoke @s only ne:interact
 
 execute if score @s ne_place_cd matches ..0 run return -1
-scoreboard players set @s ne_place_cd -5
+scoreboard players set @s ne_place_cd -8
 
 ##identifying the ne_table point
 #define score_holder #current_time

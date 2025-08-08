@@ -6,8 +6,8 @@ scoreboard objectives add ne_table_interact dummy
 
 execute unless score #max_breaks ne matches 1.. run scoreboard players set #max_breaks ne 9
 
-execute unless score #server_time_offset ne = #server_time_offset ne run scoreboard players set #server_time_offset ne 0
-scoreboard players operation #server_time_offset ne = #server_time_offset nc
+#execute unless score #server_time_offset ne = #server_time_offset ne run scoreboard players set #server_time_offset ne 0
+#scoreboard players operation #server_time_offset ne = #server_time_offset nc
 
 scoreboard objectives add ne_place_cd custom:time_since_death
 scoreboard objectives add ne_playerlevel level

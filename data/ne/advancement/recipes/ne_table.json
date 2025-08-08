@@ -15,8 +15,6 @@
     "rewards": {
       "recipes": [
         "ne:ne_table",
-        "ne:ne_gem_restore",
-        "ne:ne_gem_upg",
         "ne:ne_cookie"
       ]
     }
