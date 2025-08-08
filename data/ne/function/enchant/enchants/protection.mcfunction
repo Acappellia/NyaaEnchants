@@ -1,5 +1,7 @@
-execute if data entity @s item.components."minecraft:stored_enchantments"."minecraft:protection" run function ne:enchant/enchants_store/protection
-execute unless data entity @s item.components."minecraft:enchantments"."minecraft:protection" run return -1
+execute if data entity @s item{id:"minecraft:enchanted_book"} run function ne:enchant/enchants_store/protection
+
+execute store result score #invalid_enchant ne run function ne:enchant/enchants_check_valid/protection
+execute if score #invalid_enchant ne matches ..-1 run return -1
 
 execute store result score #ench_origin_level ne run data get entity @s item.components."minecraft:enchantments"."minecraft:protection"
 execute store result score #ench_added_level ne run data get storage ne:tmp ench_component."minecraft:stored_enchantments"."minecraft:protection"

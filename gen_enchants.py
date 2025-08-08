@@ -11,6 +11,7 @@ print(ench_list_ne)
 alllist = open(current_path + '/data/ne/function/enchant/add_enchants.mcfunction','w',encoding="utf-8")
 template = open(current_path + '/ench_gen/template.mcfunction','r',encoding="utf-8").readlines()
 template_store = open(current_path + '/ench_gen/template_store.mcfunction','r',encoding="utf-8").readlines()
+template_valid = open(current_path + '/ench_gen/template_valid.mcfunction','r',encoding="utf-8").readlines()
 
 for name in ench_list_mc:
     name = name.replace('.json','')
@@ -23,7 +24,10 @@ for name in ench_list_mc:
             new_function.write(line.replace('$nosuffix_enchantment$', name).replace('$enchantment$', 'minecraft:' + name).replace('$max_level$',str(max_level)))
     with open(current_path + '/data/ne/function/enchant/enchants_store/' + name + '.mcfunction','w',encoding="utf-8") as new_function:
         for line in template_store:
-            new_function.write(line.replace('$enchantment$', 'minecraft:' + name).replace('$max_level$',str(max_level)))
+            new_function.write(line.replace('$enchantment$', 'minecraft:' + name).replace('$max_level$',str(max_level))),
+    with open(current_path + '/data/ne/function/enchant/enchants_check_valid/' + name + '.mcfunction','w',encoding="utf-8") as new_function:
+        for line in template_valid:
+            new_function.write(line.replace('$enchantment$', 'minecraft:' + name))
 
 for name in ench_list_ne:
     name = name.replace('.json','')
@@ -37,6 +41,9 @@ for name in ench_list_ne:
     with open(current_path + '/data/ne/function/enchant/enchants_store/' + name + '.mcfunction','w',encoding="utf-8") as new_function:
         for line in template_store:
             new_function.write(line.replace('$enchantment$', 'nel:' + name).replace('$max_level$',str(max_level)))
+    with open(current_path + '/data/ne/function/enchant/enchants_check_valid/' + name + '.mcfunction','w',encoding="utf-8") as new_function:
+        for line in template_valid:
+            new_function.write(line.replace('$enchantment$', 'nel:' + name))
 
 alllist.close()
 

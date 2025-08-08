@@ -1,5 +1,7 @@
-execute if data entity @s item.components."minecraft:stored_enchantments"."minecraft:swift_sneak" run function ne:enchant/enchants_store/swift_sneak
-execute unless data entity @s item.components."minecraft:enchantments"."minecraft:swift_sneak" run return -1
+execute if data entity @s item{id:"minecraft:enchanted_book"} run function ne:enchant/enchants_store/swift_sneak
+
+execute store result score #invalid_enchant ne run function ne:enchant/enchants_check_valid/swift_sneak
+execute if score #invalid_enchant ne matches ..-1 run return -1
 
 execute store result score #ench_origin_level ne run data get entity @s item.components."minecraft:enchantments"."minecraft:swift_sneak"
 execute store result score #ench_added_level ne run data get storage ne:tmp ench_component."minecraft:stored_enchantments"."minecraft:swift_sneak"

@@ -1,5 +1,7 @@
-execute if data entity @s item.components."minecraft:stored_enchantments"."minecraft:silk_touch" run function ne:enchant/enchants_store/silk_touch
-execute unless data entity @s item.components."minecraft:enchantments"."minecraft:silk_touch" run return -1
+execute if data entity @s item{id:"minecraft:enchanted_book"} run function ne:enchant/enchants_store/silk_touch
+
+execute store result score #invalid_enchant ne run function ne:enchant/enchants_check_valid/silk_touch
+execute if score #invalid_enchant ne matches ..-1 run return -1
 
 execute store result score #ench_origin_level ne run data get entity @s item.components."minecraft:enchantments"."minecraft:silk_touch"
 execute store result score #ench_added_level ne run data get storage ne:tmp ench_component."minecraft:stored_enchantments"."minecraft:silk_touch"

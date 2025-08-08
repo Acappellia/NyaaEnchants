@@ -4,6 +4,7 @@
     "translate": "ne.enchantments.wing_shield",
     "fallback": "守护之翼"
   },
+  "exclusive_set": "#exclusive_set/armor",
   "effects": {
     "minecraft:damage_protection": [
       {

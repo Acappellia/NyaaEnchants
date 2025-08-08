@@ -1,10 +1,10 @@
 function ne:enchant/calc_cost
 
-execute unless score @p[distance=..10,tag=ne_user] ne_playerlevel >= #ne_ench_cost ne run return -1
+execute unless score @p[distance=..10,tag=ne_user] ne_playerlevel >= #ne_ench_cost ne run return run title @p[distance=..10,tag=ne_user] actionbar [{"translate":"ne.info.no_sufficient_xp","fallback":"附魔所需的经验不足……",color:"gray"}]
 
 scoreboard players reset #player_cookie_count ne
 execute store result score #player_cookie_count ne run clear @p[distance=..10,tag=ne_user] minecraft:cookie[custom_data={ne_cookie:1b}] 0
-execute unless score #player_cookie_count ne >= #ne_ench_itemcost ne run return -1
+execute unless score #player_cookie_count ne >= #ne_ench_itemcost ne run return run title @p[distance=..10,tag=ne_user] actionbar [{"translate":"ne.info.no_sufficient_cookie","fallback":"附魔所需的魔法曲奇不足……",color:"gray"}]
 
 data remove storage ne:tmp cost_info
 execute store result storage ne:tmp cost_info.lvl int 1 run scoreboard players get #ne_ench_cost ne
