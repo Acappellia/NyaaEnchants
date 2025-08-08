@@ -7,3 +7,5 @@ execute if data entity @s item.components."minecraft:enchantments"."minecraft:pu
 execute if data entity @s item.components."minecraft:enchantments"."nel:bulleye" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:supercharged" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:potion_arrow" run return -1
+
+return 1

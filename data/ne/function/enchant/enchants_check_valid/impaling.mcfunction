@@ -8,3 +8,5 @@ execute if data entity @s item.components."minecraft:enchantments"."nel:sharpeni
 #execute if data entity @s item.components."minecraft:enchantments"."minecraft:impaling" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."minecraft:density" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."minecraft:breach" run return -1
+
+return 1

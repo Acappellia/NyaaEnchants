@@ -2,3 +2,5 @@ execute if data entity @s item.components."minecraft:enchantments"."nel:enchante
 
 execute unless items entity @s contents #enchantable/fishing run return -1
 execute if data entity @s item.components."minecraft:enchantments"."minecraft:luck_of_the_sea" run return -1
+
+return 1

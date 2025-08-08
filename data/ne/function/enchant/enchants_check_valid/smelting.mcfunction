@@ -2,3 +2,5 @@ execute if data entity @s item.components."minecraft:enchantments"."nel:smelting
 
 execute unless items entity @s contents #enchantable/mining run return -1
 execute if data entity @s item.components."minecraft:enchantments"."minecraft:silk_touch" run return -1
+
+return 1

@@ -3,3 +3,5 @@ execute if data entity @s item.components."minecraft:enchantments"."minecraft:fi
 execute unless items entity @s contents #enchantable/sword run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:poisoned" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:kemono_friends" run return -1
+
+return 1

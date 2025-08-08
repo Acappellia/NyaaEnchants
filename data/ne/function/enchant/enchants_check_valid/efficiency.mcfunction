@@ -5,3 +5,5 @@ execute if data entity @s item.components."minecraft:enchantments"."nel:polishin
 execute if data entity @s item.components."minecraft:enchantments"."nel:reachability" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:chain_mining" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:timber" run return -1
+
+return 1

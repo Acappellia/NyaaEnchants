@@ -3,3 +3,5 @@ execute if data entity @s item.components."minecraft:enchantments"."minecraft:fr
 execute unless items entity @s contents #enchantable/foot_armor run return -1
 execute if data entity @s item.components."minecraft:enchantments"."minecraft:depth_strider" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:brisk_walking" run return -1
+
+return 1

@@ -2,3 +2,5 @@ execute if data entity @s item.components."minecraft:enchantments"."minecraft:un
 
 execute unless items entity @s contents #enchantable/durability run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:tenacity" run return -1
+
+return 1

@@ -3,3 +3,5 @@ execute if data entity @s item.components."minecraft:enchantments"."nel:chain_mi
 execute unless items entity @s contents #pickaxes run return -1
 execute if data entity @s item.components."minecraft:enchantments"."minecraft:efficiency" run return -1
 execute if data entity @s item.components."minecraft:enchantments"."nel:polishing" run return -1
+
+return 1
