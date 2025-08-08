@@ -1,0 +1,507 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iron_sword",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_sword",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_helmet",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_helmet",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_chestplate",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_chestplate",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_leggings",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_leggings",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_boots",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_boots",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_axe",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_axe",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_pickaxe",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_pickaxe",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_shovel",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_shovel",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_hoe",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_hoe",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "crossbow",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trident",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mace",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shield",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elytra",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.95,
+                "min": 0.1
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#on_random_loot"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30.0,
+              "options": "#treasure"
+            }
+          ],
+          "weight": 60
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "nel:gameplay/fishing/enchanted_bait"
+}

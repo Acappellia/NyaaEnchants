@@ -1,0 +1,1 @@
+scoreboard objectives add ne_level.enchanted_bait dummy

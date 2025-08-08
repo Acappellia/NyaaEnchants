@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.weakened_curse",
+    "fallback": "虚弱诅咒"
+  },
+  "effects": {
+    "damage": [
+      {
+        "effect": {
+          "type": "multiply",
+          "factor": 0.5
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 100,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#nel:enchantable_all_weapon",
+  "weight": 1
+}

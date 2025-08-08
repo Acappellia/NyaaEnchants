@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "fill_player_head",
+              "entity": "this"
+            }
+          ],
+          "weight": 50
+        },
+        {
+          "type": "empty",
+          "weight": 50
+        }
+      ],
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "nel:behead"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/player"
+}

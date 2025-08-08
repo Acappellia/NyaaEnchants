@@ -1,0 +1,2 @@
+scoreboard objectives add ne_cooldown.courageous custom:time_since_death
+scoreboard objectives add ne_sprint.courageous custom:time_since_death

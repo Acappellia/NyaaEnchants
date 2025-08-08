@@ -1,0 +1,1 @@
+scoreboard players set @n[type=fishing_bobber,distance=..1] ne_level.airforce_curse 1

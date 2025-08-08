@@ -1,0 +1,266 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.bulleye",
+    "fallback": "神射手"
+  },
+  "exclusive_set": [
+    "minecraft:power",
+    "nel:wind_charged"
+  ],
+  "effects": {
+    "damage": [
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 0.4,
+            "per_level_above_first": 0.4
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "distance": {
+                  "absolute": {
+                    "min": 3,
+                    "max": 8
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 0.6,
+            "per_level_above_first": 0.6
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "distance": {
+                  "absolute": {
+                    "min": 8,
+                    "max": 15
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 0.8,
+            "per_level_above_first": 0.8
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "distance": {
+                  "absolute": {
+                    "min": 15,
+                    "max": 25
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "distance": {
+                  "absolute": {
+                    "min": 25,
+                    "max": 40
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 1.2,
+            "per_level_above_first": 1.2
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "distance": {
+                  "absolute": {
+                    "min": 40,
+                    "max": 55
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 1.5,
+            "per_level_above_first": 1.5
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "distance": {
+                  "absolute": {
+                    "min": 55,
+                    "max": 70
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 2,
+            "per_level_above_first": 2
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "distance": {
+                  "absolute": {
+                    "min": 70
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 61,
+    "per_level_above_first": 10
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 11,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#nel:enchantable_ranged",
+  "weight": 2
+}

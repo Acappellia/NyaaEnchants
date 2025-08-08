@@ -1,0 +1,2 @@
+execute store result score @n[type=fishing_bobber,distance=..1] ne_level.enchanted_bait run data get entity @s SelectedItem.components."minecraft:enchantments"."nel:enchanted_bait"
+scoreboard players add @s ne_effect_stack.enchanted_bait 1

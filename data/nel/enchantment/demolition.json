@@ -1,0 +1,55 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.demolition",
+    "fallback": "爆破锤"
+  },
+  "effects": {
+    "post_attack": [
+      {
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "explode",
+          "block_interaction": "none",
+          "radius": {
+            "type": "linear",
+            "base": 0.7,
+            "per_level_above_first": 0.4
+          },
+          "small_particle": {
+            "type": "explosion_emitter"
+          },
+          "large_particle": {
+            "type": "explosion_emitter"
+          },
+          "sound": "entity.generic.explode",
+          "damage_type": "explosion",
+          "attribute_to_user": false,
+          "create_fire": false
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Health:0.0f}"
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 63,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/mace",
+  "weight": 2
+}

@@ -1,0 +1,1 @@
+execute on origin at @s run function nel:effects/devotion/levelup

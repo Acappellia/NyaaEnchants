@@ -1,0 +1,3 @@
+scoreboard objectives add ne_decay.supercharged custom:time_since_death
+scoreboard objectives add ne_effect_stack.supercharged dummy
+scoreboard objectives add ne_progress.supercharged dummy

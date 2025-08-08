@@ -1,0 +1,1 @@
+scoreboard objectives add ne_cooldown.airbone custom:time_since_death

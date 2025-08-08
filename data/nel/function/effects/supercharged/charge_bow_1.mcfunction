@@ -1,0 +1,5 @@
+advancement revoke @s only nel:enchantments/supercharged_using_1
+
+function nel:effects/supercharged/charging
+
+execute if score @s ne_progress.supercharged matches 60 run function nel:effects/supercharged/stack_1

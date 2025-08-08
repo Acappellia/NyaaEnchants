@@ -1,0 +1,1 @@
+scoreboard players set @s ne_sprint.courageous -2

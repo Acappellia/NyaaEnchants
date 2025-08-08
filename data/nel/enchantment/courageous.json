@@ -1,0 +1,169 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.courageous",
+    "fallback": "勇气绝杀"
+  },
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "multiply",
+          "factor": {
+            "type": "linear",
+            "base": 1.2,
+            "per_level_above_first": 0.2
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_scores",
+              "entity": "attacker",
+              "scores": {
+                "ne_cooldown.courageous": {
+                  "min": 0
+                }
+              }
+            },
+            {
+              "condition": "entity_scores",
+              "entity": "attacker",
+              "scores": {
+                "ne_sprint.courageous": {
+                  "max": -1
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/courageous/player_hit"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_scores",
+              "entity": "attacker",
+              "scores": {
+                "ne_cooldown.courageous": {
+                  "min": 0
+                }
+              }
+            },
+            {
+              "condition": "entity_scores",
+              "entity": "attacker",
+              "scores": {
+                "ne_sprint.courageous": {
+                  "max": -1
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "scale": 1.4
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "scale": 0.6
+          },
+          "horizontal_velocity": {
+            "base": 0
+          },
+          "vertical_velocity": {
+            "base": 0
+          },
+          "particle": {
+            "type": "wax_on"
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "periodic_tick": 10
+              }
+            },
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_cooldown.courageous": {
+                  "min": 0
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "play_sound",
+          "sound": "entity.experience_orb.pickup",
+          "pitch": 1.4,
+          "volume": 0.2
+        },
+        "requirements": {
+          "condition": "entity_scores",
+          "entity": "this",
+          "scores": {
+            "ne_cooldown.courageous": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/courageous/tick"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_sprinting": true
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 61,
+    "per_level_above_first": 10
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 21,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 2
+}

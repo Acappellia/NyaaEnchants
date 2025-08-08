@@ -1,0 +1,73 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.sonic_spikes",
+    "fallback": "强音戟"
+  },
+  "exclusive_set": [
+    "nel:kemono_friends",
+    "minecraft:riptide"
+  ],
+  "effects": {
+    "post_attack": [
+      {
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "apply_mob_effect",
+          "min_amplifier": {
+            "type": "linear",
+            "base": 2,
+            "per_level_above_first": 1
+          },
+          "max_amplifier": {
+            "type": "linear",
+            "base": 2,
+            "per_level_above_first": 1
+          },
+          "min_duration": 1,
+          "max_duration": 1,
+          "to_apply": "luck"
+        },
+        "requirements": {
+          "condition": "damage_source_properties",
+          "predicate": {
+            "direct_entity": {
+              "type": "trident"
+            }
+          }
+        }
+      },
+      {
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/sonic_spikes/entity_hit"
+        },
+        "requirements": {
+          "condition": "damage_source_properties",
+          "predicate": {
+            "direct_entity": {
+              "type": "trident"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 63,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/trident",
+  "weight": 2
+}

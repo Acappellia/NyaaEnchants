@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "nel:corruption_curse",
-    "nel:hollow_curse"
+    "nel:hollow_curse",
+    "nel:weakened_curse",
+    "nel:airforce_curse"
   ]
 }

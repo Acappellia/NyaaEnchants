@@ -1,0 +1,39 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.wind_charged",
+    "fallback": "风矢"
+  },
+  "exclusive_set": [
+    "minecraft:power",
+    "minecraft:flame",
+    "minecraft:punch",
+    "nel:bulleye",
+    "nel:supercharged",
+    "nel:potion_arrow"
+  ],
+  "effects": {
+    "projectile_spawned": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_charged/shoot"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 83,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 33,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/bow",
+  "weight": 1
+}

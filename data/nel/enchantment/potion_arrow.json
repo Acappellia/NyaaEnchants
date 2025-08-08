@@ -1,0 +1,63 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.potion_arrow",
+    "fallback": "药矢"
+  },
+  "exclusive_set": "nel:wind_charged",
+  "effects": {
+    "hit_block": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/potion_arrow/arrow_hit"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": [
+              "arrow",
+              "spectral_arrow"
+            ]
+          }
+        }
+      }
+    ],
+    "post_attack": [
+      {
+        "affected": "damaging_entity",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/potion_arrow/arrow_hit"
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": [
+              "arrow",
+              "spectral_arrow"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 83,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 33,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "supported_items": "#nel:enchantable_ranged",
+  "weight": 2
+}

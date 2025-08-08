@@ -1,0 +1,46 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "ne.enchantments.kemono_friends",
+    "fallback": "动物伙伴"
+  },
+  "exclusive_set": [
+    "minecraft:fire_aspect",
+    "nel:poisoned",
+    "nel:sonic_spikes"
+  ],
+  "effects": {
+    "damage": [
+      {
+        "effect": {
+          "type": "set",
+          "value": -10000
+        },
+        "requirements": {
+          "condition": "inverted",
+          "term": {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#nel:hostile"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 83,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 33,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#nel:enchantable_all_weapon",
+  "weight": 1
+}

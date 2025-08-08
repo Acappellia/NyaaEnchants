@@ -1,0 +1,305 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "ne.enchantments.sharpening",
+    "fallback": "利刃"
+  },
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "effects": {
+    "damage": [
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 0.5,
+            "per_level_above_first": 0.5
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 1,
+                      "max": 50
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 0.75,
+            "per_level_above_first": 0.75
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 51,
+                      "max": 150
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 151,
+                      "max": 300
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 1.25,
+            "per_level_above_first": 1.25
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 301,
+                      "max": 500
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 1.5,
+            "per_level_above_first": 1.5
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 501,
+                      "max": 750
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 1.75,
+            "per_level_above_first": 1.75
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 751,
+                      "max": 1000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 2,
+            "per_level_above_first": 2
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 1001,
+                      "max": 1300
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 2.25,
+            "per_level_above_first": 2.25
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 1301,
+                      "max": 1600
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 2.5,
+            "per_level_above_first": 2.5
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 1601,
+                      "max": 2000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "add",
+          "value": {
+            "type": "linear",
+            "base": 2.75,
+            "per_level_above_first": 2.75
+          }
+        },
+        "requirements": {
+          "condition": "entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "damage": {
+                    "damage": {
+                      "min": 2001
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 61,
+    "per_level_above_first": 10
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 11,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "weight": 2
+}

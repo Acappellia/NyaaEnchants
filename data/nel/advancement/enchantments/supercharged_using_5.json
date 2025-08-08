@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "charging_bow":{
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "bow",
+                    "predicates": {
+                        "enchantments": [
+                            {
+                                "enchantments": "nel:supercharged",
+                                "levels": {
+                                    "min": 5
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nel:effects/supercharged/charge_bow_5"
+    }
+}

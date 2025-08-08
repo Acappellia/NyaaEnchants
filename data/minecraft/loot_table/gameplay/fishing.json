@@ -1,0 +1,267 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "quality": -2,
+          "value": "minecraft:gameplay/fishing/junk",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ne_level.airforce_curse": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ],
+          "quality": 2,
+          "value": "minecraft:gameplay/fishing/treasure",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": -1,
+          "value": "minecraft:gameplay/fishing/fish",
+          "weight": 85,
+          "conditions": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ne_level.airforce_curse": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 2,
+          "value": "nel:gameplay/fishing/enchanted_bait",
+          "weight": 3,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            },
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_level.enchanted_bait": {
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ne_level.airforce_curse": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 2,
+          "value": "nel:gameplay/fishing/enchanted_bait",
+          "weight": 6,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            },
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_level.enchanted_bait": {
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ne_level.airforce_curse": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 2,
+          "value": "nel:gameplay/fishing/enchanted_bait",
+          "weight": 9,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            },
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_level.enchanted_bait": {
+                  "min": 3,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ne_level.airforce_curse": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 2,
+          "value": "nel:gameplay/fishing/enchanted_bait",
+          "weight": 12,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            },
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_level.enchanted_bait": {
+                  "min": 4,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ne_level.airforce_curse": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 2,
+          "value": "nel:gameplay/fishing/enchanted_bait",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            },
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "ne_level.enchanted_bait": {
+                  "min": 5
+                }
+              }
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ne_level.airforce_curse": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing"
+}

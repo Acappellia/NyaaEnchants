@@ -1,0 +1,1 @@
+scoreboard objectives add ne_decay.devotion custom:time_since_death

@@ -1,0 +1,1 @@
+execute on origin if score @s ne_effect_stack.supercharged matches 1.. run playsound item.trident.throw player @a ~ ~ ~ 1 1.8
