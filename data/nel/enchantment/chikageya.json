@@ -1,7 +1,7 @@
 {
   "anvil_cost": 8,
   "description": {
-    "translate": "ne.enchantments.chikegeya",
+    "translate": "ne.enchantments.chikageya",
     "fallback": "千影矢"
   },
   "effects": {
