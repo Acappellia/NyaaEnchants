@@ -1,0 +1,5 @@
+{
+    "function": "enchant_with_levels",
+    "levels": 64,
+    "options": "#tooltip_order"
+}
