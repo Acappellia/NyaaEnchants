@@ -1,0 +1,2 @@
+tellraw @s [{text:"[",color:"gray"},{text:"NyaaEnchants",color:"#ee88f2"},{text:"] ",color:"gray"},{text:"已加载",color:"white"},{text:" NyaaEnchants ",color:"gold"},{text:"自定义附魔！",color:"white"}]
+tellraw @s [{text:"[",color:"gray"},{text:"NyaaEnchants",color:"#ee88f2"},{text:"] ",color:"gray"},{text:"使用",color:"white"},{text:" 青金石 ",color:"aqua"},{text:"+",color:"white"},{text:" 书 ",color:"aqua"},{text:"合成附魔指南！",color:"white"}]

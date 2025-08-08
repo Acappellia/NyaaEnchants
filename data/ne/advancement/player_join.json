@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "player_join":{
+            "trigger": "location"
+        }
+    },
+    "rewards": {
+        "function": "ne:player_join"
+    }
+}

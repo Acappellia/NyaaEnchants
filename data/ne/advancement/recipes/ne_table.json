@@ -15,7 +15,8 @@
     "rewards": {
       "recipes": [
         "ne:ne_table",
-        "ne:ne_cookie"
+        "ne:ne_cookie",
+        "ne:guide_book"
       ]
     }
   }

@@ -10,7 +10,7 @@
       {
         "amount": {
           "type": "linear",
-          "base": 1,
+          "base": 2,
           "per_level_above_first": 1
         },
         "attribute": "minecraft:max_health",
