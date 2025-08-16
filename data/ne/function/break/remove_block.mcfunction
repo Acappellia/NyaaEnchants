@@ -1,6 +1,6 @@
 setblock ~ ~ ~ air
 
-execute on passengers on passengers as @s[tag=ne_table_item] if entity @s[tag=ne_have_item] run function ne:break/return_item
+execute on passengers on passengers as @s[tag=ne_table_item] if data entity @s item run function ne:break/return_item
 
 execute on passengers on passengers on passengers run kill @s
 execute on passengers on passengers run kill @s
