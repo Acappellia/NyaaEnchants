@@ -6,7 +6,7 @@ execute if score #invalid_enchant ne matches ..-1 run return -1
 execute store result score #ench_origin_level ne run data get entity @s item.components."minecraft:enchantments"."nel:spring_boots"
 execute store result score #ench_added_level ne run data get storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:spring_boots"
 execute store result score #ench_maxlvl ne run data get entity @s item.components."minecraft:custom_data".ne_break
-scoreboard players add #ench_maxlvl ne 3
+scoreboard players add #ench_maxlvl ne 2
 #execute if score #ench_maxlvl ne matches 11.. run scoreboard players set #ench_maxlvl ne 10
 
 execute if score #ench_origin_level ne > #ench_added_level ne run return -1
