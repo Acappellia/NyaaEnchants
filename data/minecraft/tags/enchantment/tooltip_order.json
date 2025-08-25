@@ -87,5 +87,6 @@
     "minecraft:mending",
     "nel:heart_of_kedama",
     "nel:nirvana"
-  ]
+  ],
+  "replace": true
 }
