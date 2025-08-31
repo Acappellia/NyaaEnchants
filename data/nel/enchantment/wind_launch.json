@@ -37,6 +37,10 @@
           "type": "all_of",
           "effects": [
             {
+              "type": "run_function",
+              "function": "nel:effects/wind_launch/pre_jump"
+            },
+            {
               "type": "explode",
               "attribute_to_user": false,
               "block_interaction": "none",
@@ -48,7 +52,7 @@
                 "type": "minecraft:gust"
               },
               "sound": "minecraft:entity.breeze.jump",
-              "knockback_multiplier": 1
+              "knockback_multiplier": 0.6
             },
             {
               "type": "run_function",
@@ -82,9 +86,7 @@
             }
           ]
         }
-      }
-    ],
-    "minecraft:location_changed": [
+      },
       {
         "effect": {
           "type": "run_function",
