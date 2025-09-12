@@ -14,3 +14,4 @@ scoreboard objectives add ne_playerlevel level
 scoreboard objectives add ne_player_resetcost custom:time_since_death
 
 schedule function ne:schedules/6s 6s append
+schedule function ne:schedules/1s 1s append

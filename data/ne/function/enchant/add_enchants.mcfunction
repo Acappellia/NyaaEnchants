@@ -70,7 +70,7 @@ execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."n
 execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:potion_arrow" run function ne:enchant/enchants/potion_arrow
 execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:reachability" run function ne:enchant/enchants/reachability
 execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:sakura_kinetics" run function ne:enchant/enchants/sakura_kinetics
-execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:sharpening" run function ne:enchant/enchants/sharpening
+execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:accuminate" run function ne:enchant/enchants/accuminate
 execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:siphon" run function ne:enchant/enchants/siphon
 execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:smelting" run function ne:enchant/enchants/smelting
 execute if data storage ne:tmp ench_component."minecraft:stored_enchantments"."nel:sonic_spikes" run function ne:enchant/enchants/sonic_spikes

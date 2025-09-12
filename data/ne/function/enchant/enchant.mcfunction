@@ -1,3 +1,4 @@
+data remove storage ne:tmp ench_component
 execute on vehicle on passengers as @s[tag=ne_table_enchstore] run data modify storage ne:tmp ench_component set from entity @s item.components
 
 data modify entity @s item.components."minecraft:repair_cost" set from storage ne:tmp ench_component."minecraft:repair_cost"
