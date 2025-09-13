@@ -1,3 +1,4 @@
+execute if score @s ne_decay.devotion matches -45 run return -1
 scoreboard players set @s ne_decay.devotion -45
 
 playsound block.conduit.activate player @s ~ ~ ~ 0.5 2

@@ -90,16 +90,350 @@
       {
         "effect": {
           "type": "run_function",
-          "function": "nel:effects/wind_launch/reset_scoreboards"
+          "function": "nel:effects/wind_launch/reset_scoreboards_1"
         },
         "requirements": {
-          "condition": "entity_properties",
-          "entity": "this",
-          "predicate": {
-            "flags": {
-              "is_on_ground": true
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 1,
+                "max": 1
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
             }
-          }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_2"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 2,
+                "max": 2
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_3"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 3,
+                "max": 3
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_4"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 4,
+                "max": 4
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_5"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 5,
+                "max": 5
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_6"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 6,
+                "max": 6
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_7"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 7,
+                "max": 7
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_8"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 8,
+                "max": 8
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_9"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 9,
+                "max": 9
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "nel:effects/wind_launch/reset_scoreboards_10"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_ground": true
+                }
+              }
+            },
+            {
+              "condition": "value_check",
+              "range": {
+                "min": 10
+              },
+              "value": {
+                "type": "enchantment_level",
+                "amount": {
+                  "type": "linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              }
+            }
+          ]
         }
       }
     ]

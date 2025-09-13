@@ -1,1 +1,2 @@
 scoreboard objectives add ne_cooldown.wind_launch dummy
+scoreboard objectives add ne_effect_stack.wind_launch dummy
