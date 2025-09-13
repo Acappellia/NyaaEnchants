@@ -114,7 +114,7 @@
       {
         "effect": {
           "type": "run_function",
-          "function": "nel:effects/intellect/effect_5"
+          "function": "nel:effects/intellect/effect_6"
         },
         "requirements": {
           "condition": "value_check",
@@ -127,8 +127,7 @@
             }
           },
           "range": {
-            "min": 5,
-            "max": 5
+            "min": 6
           }
         }
       }
