@@ -7,7 +7,11 @@
   "effects": {
     "minecraft:attributes":[
       {
-        "amount": 1,
+        "amount": {
+          "type": "linear",
+          "base": 1,
+          "per_level_above_first": 0.9
+        },
         "attribute": "safe_fall_distance",
         "id": "ne:enchantment.wind_launch",
         "operation": "add_multiplied_base"
@@ -51,8 +55,8 @@
               "small_particle": {
                 "type": "minecraft:gust"
               },
-              "sound": "minecraft:entity.breeze.jump",
-              "knockback_multiplier": 0.6
+              "sound": "minecraft:entity.goat.long_jump",
+              "knockback_multiplier": 0.65
             },
             {
               "type": "run_function",
