@@ -1,4 +1,5 @@
 data modify entity @s item set from entity @p[distance=..10,tag=ne_user] SelectedItem
+data modify entity @s item.count set value 1
 item modify entity @p[distance=..10,tag=ne_user] weapon.mainhand ne:remove_1
 
 playsound block.end_portal_frame.fill block @a ~ ~ ~ 1 0.8
